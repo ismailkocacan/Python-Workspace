@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kategori Listesi 1</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+     <style type="text/css">
+         body{
+             padding: 60px;
+         }
+     </style>
+
+</head>
+<body>
+
+<table class="table table-condensed">
+      <tr>
+         <th>id</th>
+         <th>kategori adı</th>
+      </tr>
+    {% for kategori in kategorilist %}
+        </tr>
+            <td>{{ kategori.id }}</td>
+            <td>{{ kategori.adi }}</td>
+        </tr>
+    {% endfor %}
+</table>
+
+
+</body>
+</html>

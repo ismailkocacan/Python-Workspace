@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kategori Listesi 2</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+ <style type="text/css">
+     body{
+         padding: 60px;
+     }
+ </style>
+</head>
+<body>
+
+<div class="list-group">
+  <a href="#" class="list-group-item active">
+    Kategoriler
+  </a>
+
+  {% for kategori in kategorilist %}
+    <a href="{{ kategori.id }}" class="list-group-item">{{ kategori.adi }}</a>
+  {% endfor %}
+
+</div>
+
+
+</body>
+</html>
